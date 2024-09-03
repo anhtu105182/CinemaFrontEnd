@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .nen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url('/src/assets/imglogin/SignUp2.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+        }
+        .revert{
+            
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            height: 20px;
+            top: 64px;
+            left: 40px;
+            gap: 24px;
+            opacity: 0px;
+            /* background-color: red; */
+            color: #FFFFFF;
+            font-size: 24px;
+
+        }
+        .revert p {
+            width: 88px;
+            height: 28px;
+            gap: 0px;
+            opacity: 0px;
+            font-family: Roboto;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28.13px;
+            text-align: left;
+            margin: 0px;
+        }
+
+        .container {
+            position: absolute; /* Thêm dòng này */
+            width: 520px;
+            height: 600px;
+            top: 64px;
+            left: 612px;
+            background: #FFFFFF;
+            /* Xóa thuộc tính opacity: 0px; vì nó làm container bị ẩn */
+        }
+        .title{
+            width: 263px;
+            height: 42px;
+            top: 98px;
+            left: 80px;
+            gap: 0px;
+            opacity: 0px;
+            font-family: Roboto;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 42.19px;
+            text-align: left;
+            color: #000000;
+            padding: 90px 80px 0px;
+        }
+        .content1{
+            padding: 20px 80px 0px;
+        }
+        .content1 p {
+        width: 200px;
+        height: 20px;
+        top: 204px;
+        left: 80px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: left;
+        color: #333333;
+        }
+        .phone-input-container {
+            width: 280px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding: 5px 0;
+        }
+        .phone-input {
+            border: none;
+            outline: none;
+            flex-grow: 1;
+        }
+        .phone-input::placeholder {
+            color: #9DA8BE;
+        }
+        .text-input-container {
+            width: 280px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding: 5px 0;
+        }
+        .text-input {
+            border: none;
+            outline: none;
+            flex-grow: 1;
+        }
+        .text-input::placeholder {
+            color: #9DA8BE;
+        }
+        .btn1{
+            padding: 18px 80px 0px ;
+        }
+        .btn2{
+            padding: 0px 80px 0px ;
+        }
+        .btn1-content{
+            width: 280px;
+            height: 40px;
+            top: 468px;
+            left: 80px;
+            padding: 8px 10px 12px 8px;
+            gap: 12px;
+            border-radius: 5.07px;
+            opacity: 0px;
+            background: #1A2C50;
+            color: #FFFFFF;
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 23.44px;
+            text-align: center;
+        }
+        .btn1-content:hover{
+            background-color: #122b5f;
+        }
+        .note{
+            width: 306px;
+            height: 14px;
+            gap: 0px;
+            opacity: 0px;
+            font-family: Roboto;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 14.06px;
+            text-align: left;
+            padding: 15px 80px 0px;
+            color: #5A637A;
+        }
+        .footer p{
+            width: 233px;
+            height: 14px;
+            top: 718px;
+            left: 80px;
+            gap: 0px;
+            opacity: 0px;
+            font-family: Roboto;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 14.06px;
+            text-align: left;
+            padding: 180px 80px 3px;
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nen">
+        <a href="./signup.html">
+            <div class="revert">
+                <i class="fas fa-arrow-left"></i>
+                <p>Kembali</p>
+            </div>
+        </a>
+        <div class="container">
+            <div class="title">
+                Daftar TIX ID
+            </div>
+            <div class="content1">
+                <p>
+                    ALAMAT EMAIL
+                </p>
+                <div class="text-input-container">
+                    <input type="text" class="text-input" placeholder="Masukkan Input">
+                </div>
+            </div>
+            <br><br>
+            <div class="btn1">
+                <button class="btn1-content">Masuk Sekarang</button>
+            </div>
+            <div class="note">
+                <p>
+                    *Dengan mendaftar saya menyetujui kebijakan dari TIX ID
+                </p>
+            </div>
+            <div class="footer">
+                <p>
+                    2021 TIX ID - PT Nusantara Elang Sejahtera.
+                </p>
+            </div>
+        </div>
+    </div>
+</body> 
+
+</html>

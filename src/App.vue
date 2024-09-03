@@ -1,26 +1,43 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <AppHeader />
+    <router-view />
+    <!-- <Homepage /> -->
+    <!-- <ComingSoonMovie /> -->
+    <!-- <news /> -->
+    <!-- <NewsActive /> -->
+    <!-- <NewsVideo /> -->
+    <AppFooter />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppHeader from '@/components/AppHeader.vue';
+// import Homepage from '@/components/Homepage.vue'
+// import ComingSoonMovie from '@/views/ComingSoonMovie.vue';
+// import news from '@/views/news.vue';
+// import NewsActive from '@/views/NewsActive.vue';
+// import NewsVideo from '@/views/NewsVideo.vue';
+
+
+import AppFooter from '@/components/AppFooter.vue';
+
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    AppHeader,
+    // Homepage,
+    // ComingSoonMovie,
+    // news,
+    // NewsActive,
+    // NewsVideo,
+    AppFooter
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+/* Các style chung cho ứng dụng */
 </style>
+
+comingSoonMovie
